@@ -1,0 +1,32 @@
+# 1. Update Linux packages
+sudo apt update
+
+# 2. Install Python and pip
+sudo apt install python3 python3-pip python3-venv -y
+
+# 3. Check Python version
+python3 --version
+
+# 4. Check pip version
+pip3 --version
+
+# 5. Create virtual environment
+python3 -m venv ml-env
+
+# 6. Activate virtual environment
+source ml-env/bin/activate
+
+# 7. Upgrade pip
+python -m pip install --upgrade pip
+
+# 8. Install Jupyter Notebook
+python -m pip install notebook
+
+# 9. Install required ML libraries
+python -m pip install pandas numpy matplotlib seaborn scikit-learn tensorflow
+
+# 10. Launch Jupyter Notebook
+jupyter notebook
+
+# 11. Deactivate virtual environment (after work)
+deactivate
